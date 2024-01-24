@@ -66,3 +66,33 @@
     }
   }
 }
+
+.iconlist {
+  @include list-horizontal;
+  gap: size(16);
+
+  &-link {
+    color: $white;
+    font-size: size(20);
+    @include transitionsall;
+
+    @include hover {
+      color: $primary;
+    }
+  }
+}
+
+.footerlist {
+  @include list-vertical;
+
+  &-link {
+    color: $white;
+    font-size: size(15);
+    font-weight: 400;
+    @include transitionsall;
+
+    @include hover {
+      color: $primary;
+    }
+  }
+}

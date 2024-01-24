@@ -3,6 +3,42 @@
 
 .footer {
   
+  .footerinfo {
+    @include flex-column;
+    gap: size(20);
+
+    &-body {
+      .footertext {
+        color: $white;
+        font-size: size(15);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .footertop {
+    background: $footermenubg;
+    padding: size(64) 0 size(0);
+
+    .footertitle {
+      color: $white;
+      font-size: size(16);
+      font-weight: 700;
+    }
+
+    .footborder {
+      @include border-single(top, solid, 1, $footerborder);
+      margin-top: size(32);
+    }
+  }
+
+  .footerthumb {
+    @include flex-center;
+    width: size(200);
+    margin-inline: auto;
+    overflow: hidden;
+  }
+  
   .copyright {
     @include flex-center-vert;
     background: $copyrightbg;
