@@ -1,0 +1,31 @@
+$time: 350ms;
+
+// DEFAULT COLORS
+$white: hsl(0, 0%, 100%); //#ffffff
+$black: hsl(0, 0%, 0%); //#000000
+
+// THEME-COLORS
+$primary: hsl(353, 100%, 48%); //#F3001C
+$secondary: hsl(0, 0%, 30%); //#4D4D4D
+
+// BACKGROUND-COLORS
+$bgprimary: hsl(0, 100%, 50%); //#FF0000
+
+// TEXT-COLORS
+$textprimary: hsl(0, 0%, 20%); //#333
+$textsecondary: hsl(0, 0%, 40%); //#666
+$headingtext: hsl(220, 5%, 12%); //#1C1D1F
+$selectcolor: #413C3C; //#413C3C
+$activecolor: hsl(220, 23%, 97%); //#F7F8FA
+
+$test: rgb(90, 181, 161);
+
+$danger: hsl(0, 91%, 54%); //#F51F1F
+
+// BORDER-COLORS
+
+// SHADOWS
+$shadow-1: hsl(252, 26%, 89%); //#DEDBEA
+
+// BOX-SHADOWS
+$cardshadow: 0 .25rem .625rem 0 $shadow-1;
