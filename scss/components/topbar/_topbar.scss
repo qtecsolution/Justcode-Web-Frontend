@@ -2,7 +2,7 @@
 @use "../../partials" as *;
 
 .topbar {
-  height: size(48);
+  height: size(36);
   @include flex-center-vert;
   background: $white;
 

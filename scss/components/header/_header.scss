@@ -1,4 +1,9 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
-.header {}
+.header {
+  background: $white;
+  @include border-single(bottom, solid, 1.5, $headerborder);
+  height: size(64);
+  @include flex-center-vert;
+}

@@ -45,3 +45,24 @@
     }
   }
 }
+
+.contactlist {
+  @include list-horizontal;
+  gap: size(14);
+
+  &-link {
+    color: $white;
+    font-size: size(14);
+    font-weight: 500;
+    @include w100;
+    @include transitionsall;
+
+    &:hover:not(.active) {
+      color: $primary;
+    }
+
+    &.active {
+      color: $primary;
+    }
+  }
+}
