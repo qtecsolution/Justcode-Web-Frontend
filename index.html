@@ -6,6 +6,8 @@
   <title>JustCode</title>
   <!-- FAVICON -->
   <link rel="shortcut icon" href="assets/images/logo/favicon.ico" type="image/x-icon"/>
+  <!-- REMIX-ICON (CDN) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"/>
   <!-- BACK-TO-TOP-CSS -->
   <link rel="stylesheet" href="assets/css/back-top/back-top.css"/>
   <!-- BOOTSTRAP-CSS -->
@@ -29,6 +31,101 @@
     </div>
   </div>
   <!-- PRELOADER-END -->
+
+  <!-- TOPBAR-START -->
+  <div class="topbar">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-end gap-3">
+        <a href="#" class="btn-top">Signin / Signup</a>
+        
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="topbarlink" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Follow on Facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          
+          <a href="#" class="topbarlink" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Follow on Twitter">
+            <i class="bi bi-twitter"></i>
+          </a>
+
+          <a href="#" class="topbarlink" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Follow on Youtube">
+            <i class="bi bi-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- TOPBAR-END -->
+
+  <!-- HEADER-START -->
+  <header class="header sticky-top">
+    <div class="container">
+      <nav class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="brandlogo">
+          <img src="assets/images/logo/logo.png" alt="Brand-Logo"/>
+        </a>
+
+        <!-- DESKTOP-MENU -->
+        <div class="d-none d-lg-block">
+          <ul class="desktoplist">
+            <li class="desktoplist-item">
+              <a href="#" class="desktoplist-link active">Home</a>
+            </li>
+            
+            <li class="desktoplist-item">
+              <a href="#" class="desktoplist-link">Upcoming Course</a>
+            </li>
+            
+            <li class="desktoplist-item">
+              <a href="#" class="desktoplist-link">Free course</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- MOBILE-MENU -->
+        <div class="d-lg-none d-block">
+          <button type="button" class="btn-hamburger" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <i class="ri-menu-3-line"></i>
+          </button>
+
+          <!-- MOBILE-LIST -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenu">
+            <div class="offcanvas-header">
+              <a href="index.html" class="brandlogo">
+                <img src="assets/images/logo/logo.png" alt="Brand-Logo"/>
+              </a>
+      
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
+
+            <div class="offcanvas-body p-0">
+              <ul class="mobilelist">
+                <li class="mobilelist-item">
+                  <a href="#" class="mobilelist-link active">Home</a>
+                </li>
+                
+                <li class="mobilelist-item">
+                  <a href="#" class="mobilelist-link">Upcoming Course</a>
+                </li>
+                
+                <li class="mobilelist-item">
+                  <a href="#" class="mobilelist-link">Free course</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- HEADER-END -->
+
+  <!-- FOOTER-START -->
+  <footer class="footer">
+
+  </footer>
+  <!-- FOOTER-END -->
   
   <!-- PRELOADER-JS -->
   <script src="assets/js/loader/loader.js"></script>

@@ -1,3 +1,47 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.desktoplist {
+  @include list-horizontal;
+  gap: size(20);
+
+  &-link {
+    color: $black;
+    font-size: size(15);
+    font-weight: 600;
+    @include w100;
+    @include transitionsall;
+
+    &:hover:not(.active) {
+      color: $primary;
+    }
+
+    &.active {
+      color: $primary;
+    }
+  }
+}
+
+.mobilelist {
+  @include list-vertical;
+
+  &-link {
+    color: $secondary;
+    font-size: size(15);
+    font-weight: 600;
+    @include border-single(bottom, solid, 1.5, $secondary);
+    @include w100;
+    padding: size(8) size(16);
+    @include transitionsall;
+
+    &:hover:not(.active) {
+      color: $primary;
+      border-color: $primary;
+    }
+
+    &.active {
+      color: $primary;
+      border-color: $primary;
+    }
+  }
+}

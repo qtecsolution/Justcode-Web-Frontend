@@ -26,6 +26,7 @@
     .btn-close {
       @include square(24);
       @include flex-center;
+      font-size: size(20);
       overflow: hidden;
       @include radius(0);
       @include transitionsall;
@@ -39,6 +40,8 @@
             fill: $danger;
           }
         }
+
+        color: $danger;
       }
     }
   }

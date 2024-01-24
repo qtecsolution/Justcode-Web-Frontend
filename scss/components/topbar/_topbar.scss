@@ -1,2 +1,21 @@
 @use "../../global" as *;
 @use "../../partials" as *;
+
+.topbar {
+  height: size(48);
+  @include flex-center-vert;
+  background: $white;
+
+  .topbarlink {
+    @include square(24);
+    @include circle;
+    @include flex-center;
+    font-size: size(20);
+    color: $black;
+    @include transitionsall;
+
+    @include hover {
+      color: $primary;
+    }
+  }
+}

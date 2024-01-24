@@ -17,3 +17,28 @@ button,
     outline: none;
   }
 }
+
+.btn-top {
+  color: $black;
+  font-weight: 600;
+  @include transitionsall;
+
+  @include hover {
+    color: $primary;
+  }
+}
+
+.btn-hamburger {
+  @include square(36);
+  @include border(solid, 1.5, $secondary);
+  @include radius(4);
+  font-size: size(20);
+  color: $secondary;
+  @include flex-center;
+  padding: size(4);
+  text-align: center;
+
+  @include hover {
+    @include setBgColor($secondary, $white);
+  }
+}

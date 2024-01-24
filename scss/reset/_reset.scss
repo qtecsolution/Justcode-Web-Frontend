@@ -116,8 +116,9 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
-  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  text-rendering: optimizeSpeed;
 }
 
 h1,
