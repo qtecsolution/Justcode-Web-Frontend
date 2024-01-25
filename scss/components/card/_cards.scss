@@ -8,6 +8,7 @@
   gap: size(10);
   padding: size(20);
   @include h100;
+  @include transitiontransform;
 
   &-icon {
     @include square(64);
@@ -34,6 +35,12 @@
       font-size: size(16);
       font-weight: 600;
       line-height: 1.5;
+      @include flex-center-vert;
+      height: 100%;
     }
+  }
+
+  @include hover {
+    @include translateY(size(-10));
   }
 }
