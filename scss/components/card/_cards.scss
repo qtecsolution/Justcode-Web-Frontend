@@ -44,3 +44,15 @@
     @include translateY(size(-10));
   }
 }
+
+.cardcoursemap {
+  @include wh100;
+
+  .coursemaptext {
+    color: $textcolor;
+    font-size: size(16);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+  }
+}

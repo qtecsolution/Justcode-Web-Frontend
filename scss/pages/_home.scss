@@ -167,20 +167,7 @@
   }
 
   .timeline {
-    padding: 0;
     @include list-vertical;
-    position: relative;
-
-    // &::before {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   width: size(3);
-    //   background: $primary;
-    //   left: size(12);
-    //   height: 100%;
-    // }
 
     li {
       position: relative;
@@ -243,8 +230,9 @@
         @include radius(32);
         @include flex-center;
         font-size: size(13);
+        height: size(28);
         font-weight: 700;
-        line-height: 1.8;
+        line-height: 1;
         letter-spacing: size(0.25);
         padding-inline: size(14);
         text-align: center;
@@ -261,5 +249,14 @@
       top: 0;
       left: 0;
     }
+  }
+}
+
+.courseroadmap {
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
   }
 }
