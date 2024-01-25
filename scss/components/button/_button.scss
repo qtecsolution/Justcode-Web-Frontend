@@ -42,3 +42,31 @@ button,
     @include setBgColor($secondary, $white);
   }
 }
+
+.btn-intro {
+  background: $white;
+  @include border(solid, 1, $headerborder);
+  @include radius(32);
+  @include flex-center;
+  gap: size(10);
+  width: size(186);
+  height: size(42);
+  padding-inline: size(16);
+
+  .btnicon {
+    @include square(20);
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .btntext {
+    color: $textcolor;
+    font-size: size(13);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  @include hover {
+    background: $hoverbg;
+  }
+}

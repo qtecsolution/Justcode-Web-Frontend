@@ -329,7 +329,6 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 1.4;
-  overflow-x: hidden;
   scroll-snap-type: y mandatory;
   text-rendering: optimizeSpeed;
 }
@@ -468,6 +467,36 @@ button:focus,
 .btn-hamburger:not([disabled]):hover {
   background: hsl(0, 0%, 30%);
   color: hsl(0, 0%, 100%);
+}
+
+.btn-intro {
+  background: hsl(0, 0%, 100%);
+  border: solid 0.0625rem rgba(71, 85, 105, 0.1);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 11.625rem;
+  height: 2.625rem;
+  padding-inline: 1rem;
+}
+.btn-intro .btnicon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.btn-intro .btntext {
+  color: hsl(215, 25%, 27%);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.btn-intro:not([disabled]):hover {
+  background: rgb(248, 250, 252);
 }
 
 .header {
@@ -982,6 +1011,58 @@ table tr td {
   font-weight: 500;
 }
 
+.showcase {
+  padding: 3rem 0.5rem;
+  background: hsl(217, 44%, 96%);
+}
+.showcase .topicon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.showcase .showcasedetails {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.showcase .showcasedetails-header .info .title {
+  color: hsl(0, 0%, 0%);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.showcase .showcasedetails-header .info .maintitle {
+  color: hsl(222, 47%, 11%);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.showcase .showcasedetails-header .info .maintitle span {
+  font: inherit;
+  line-height: inherit;
+}
+.showcase .showcasedetails-header .info .subtitle {
+  color: hsl(215, 25%, 27%);
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.showcase .showcasedetails-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.showcase .showcasedetails-body .text {
+  color: hsl(215, 25%, 27%);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
 .brandlogo {
   width: 9.375rem;
   height: 3.125rem;
@@ -1000,6 +1081,10 @@ table tr td {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.marked {
+  color: hsl(0, 100%, 50%);
 }
 
 .parallax {

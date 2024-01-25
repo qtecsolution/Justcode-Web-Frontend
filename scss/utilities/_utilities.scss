@@ -17,6 +17,10 @@
   }
 }
 
+.marked {
+  color: $bgprimary;
+}
+
 .parallax {
   position: relative;
   @include translateY(size(48));

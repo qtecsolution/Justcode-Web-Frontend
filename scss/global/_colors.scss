@@ -12,13 +12,17 @@ $secondary: hsl(0, 0%, 30%); //#4D4D4D
 $bgprimary: hsl(0, 100%, 50%); //#FF0000
 $footermenubg: hsl(216, 53%, 26%); //#1F3B64
 $copyrightbg: hsl(216, 53%, 22%); //#1A3255
+$showcasebg: hsl(217, 44%, 96%); //#F2F5FA
+$hoverbg: rgb(248, 250, 252/1);
 
 // TEXT-COLORS
 $textprimary: hsl(0, 0%, 20%); //#333
 $textsecondary: hsl(0, 0%, 40%); //#666
 $headingtext: hsl(220, 5%, 12%); //#1C1D1F
-$selectcolor: #413C3C; //#413C3C
+$selectcolor: hsl(0, 4%, 25%); //#413C3C
 $activecolor: hsl(220, 23%, 97%); //#F7F8FA
+$titlecolor: hsl(222, 47%, 11%); //#0f172a
+$textcolor: hsl(215, 25%, 27%); //#334155
 
 $test: rgb(90, 181, 161);
 

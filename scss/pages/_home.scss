@@ -1,3 +1,61 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.showcase {
+  padding: size(48) size(8);
+  background: $showcasebg;
+
+  .topicon {
+    @include square(48);
+    @include circle;
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .showcasedetails {
+    @include flex-column;
+    gap: size(32);
+
+    &-header {
+      .info {
+        .title {
+          color: $black;
+          font-size: size(16);
+          font-weight: 600;
+          line-height: 1.5;
+        }
+
+        .maintitle {
+          color: $titlecolor;
+          font-size: size(40);
+          font-weight: 700;
+          line-height: 1;
+
+          span {
+            font: inherit;
+            line-height: inherit;
+          }
+        }
+        
+        .subtitle {
+          color: $textcolor;
+          font-size: size(14);
+          font-weight: 600;
+          line-height: 1.4;
+        }
+      }
+    }
+
+    &-body {
+      @include flex-column;
+      gap: size(32);
+      
+      .text {
+        color: $textcolor;
+        font-size: size(18);
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
+}
