@@ -1,3 +1,39 @@
 @use "../../global" as *;
 @use "../../partials" as *;
 
+.cardcourse {
+  background: $bgprimary;
+  @include radius(16);
+  @include flex-center-column;
+  gap: size(10);
+  padding: size(20);
+  @include h100;
+
+  &-icon {
+    @include square(64);
+    @include flex-center;
+    overflow: hidden;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &-detail {
+    @include flex-center;
+    text-align: center;
+
+    .titlebox {
+      @include flex-center-vert;
+      height: size(48);
+      overflow: hidden;
+    }
+
+    .coursetitle {
+      color: $white;
+      font-size: size(16);
+      font-weight: 600;
+      line-height: 1.5;
+    }
+  }
+}

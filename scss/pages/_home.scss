@@ -40,18 +40,6 @@
           font-weight: 600;
           line-height: 1.5;
         }
-
-        .maintitle {
-          color: $titlecolor;
-          font-size: size(40);
-          font-weight: 700;
-          line-height: 1.4;
-
-          span {
-            font: inherit;
-            line-height: inherit;
-          }
-        }
         
         .subtitle {
           color: $textcolor;
@@ -94,6 +82,62 @@
 
     iframe {
       @include wh100;
+    }
+  }
+}
+
+.maintitle {
+  color: $titlecolor;
+  font-size: size(40);
+  font-weight: 700;
+  line-height: 1.4;
+
+  span {
+    font: inherit;
+    line-height: inherit;
+  }
+}
+
+.aboutcourse {
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
+
+  &-header {
+    @include flex-center;
+
+    .maintitle {
+      text-align: center;
+    }
+  }
+
+  &-body {
+    @include w100;
+    @include flex-center-vert;
+    gap: size(20);
+    flex-wrap: wrap;
+
+    .cardcourse {
+      width: 100%;
+
+      @include breakpoint(mobile576) {
+        width: calc((100% / 2) - size(20));
+      }
+
+      @include breakpoint(mobile768) {
+        width: calc((100% / 3) - size(20));
+      }
+
+      @include breakpoint(tab992) {
+        width: calc((100% / 4) - size(20));
+      }
+
+      @include breakpoint(desktop1200) {
+        width: calc((100% / 5) - size(20));
+      }
     }
   }
 }
