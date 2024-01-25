@@ -1,6 +1,14 @@
 @use "../global" as *;
 @use "../partials" as *;
 
+.container-fluid {
+  padding-inline: size(24);
+
+  @include breakpoint(desktop1024) {
+    padding-inline: size(48);
+  }
+}
+
 .showcase {
   padding: size(24) size(8) size(48);
   background: $showcasebg;
@@ -37,7 +45,7 @@
           color: $titlecolor;
           font-size: size(40);
           font-weight: 700;
-          line-height: 1;
+          line-height: 1.4;
 
           span {
             font: inherit;

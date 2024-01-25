@@ -1011,6 +1011,15 @@ table tr td {
   font-weight: 500;
 }
 
+.container-fluid {
+  padding-inline: 1.5rem;
+}
+@media screen and (min-width: 64rem) {
+  .container-fluid {
+    padding-inline: 3rem;
+  }
+}
+
 .showcase {
   padding: 1.5rem 0.5rem 3rem;
   background: hsl(217, 44%, 96%);
@@ -1049,7 +1058,7 @@ table tr td {
   color: hsl(222, 47%, 11%);
   font-size: 2.5rem;
   font-weight: 700;
-  line-height: 1;
+  line-height: 1.4;
 }
 .showcase .showcasedetails-header .info .maintitle span {
   font: inherit;
