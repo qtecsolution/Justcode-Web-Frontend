@@ -260,3 +260,73 @@
     gap: size(32);
   }
 }
+
+.instructors {
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(80);
+  }
+
+  .instructorthumb {
+    @include w100;
+    height: size(300);
+    @include flex-center;
+    @include radius(10);
+    overflow: hidden;
+
+    @include breakpoint(desktop1400) {
+      height: size(360);
+    }
+
+    img {
+      @include wh100;
+      object-fit: cover;
+    }
+  }
+
+  .instructordetails {
+    @include flex-column;
+    gap: size(24);
+
+    @include breakpoint(mobile767) {
+      text-align: center;
+    }
+
+    .instructorname {
+      color: $black;
+      font-weight: 600;
+    }
+
+    .details {
+      max-width: size(400);
+
+      .instructortext {
+        color: $textcolor;
+        font-size: size(16);
+        font-weight: 400;
+        line-height: 1.4;
+
+        @include breakpoint(desktop1400) {
+          font-size: size(18);
+        }
+      }
+    }
+  }
+}
+
+.supportchannel {
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
+
+}

@@ -56,3 +56,29 @@
     text-align: center;
   }
 }
+
+.cardsupportchannel {
+  background: $bgprimary;
+  @include radius(16);
+  @include flex-center-column;
+  gap: size(16);
+  padding: size(32);
+  @include wh100;
+  text-align: center;
+  @include transitiontransform;
+  
+  .supporticon {
+    color: $white;
+    font-size: size(64);
+  }
+
+  .title {
+    color: $white;
+    font-size: size(24);
+    font-weight: 500;
+  }
+
+  @include hover {
+    @include translateY(size(-10));
+  }
+}
