@@ -2,7 +2,7 @@
 @use "../partials" as *;
 
 .showcase {
-  padding: size(48) size(8);
+  padding: size(24) size(8) size(48);
   background: $showcasebg;
 
   .topicon {
@@ -14,10 +14,18 @@
 
   .showcasedetails {
     @include flex-column;
-    gap: size(32);
+    gap: size(24);
+
+    @include breakpoint(tablet991) {
+      margin-bottom: size(32);
+    }
 
     &-header {
       .info {
+        @include breakpoint(tablet991) {
+          text-align: center;
+        }
+
         .title {
           color: $black;
           font-size: size(16);
@@ -48,14 +56,36 @@
 
     &-body {
       @include flex-column;
-      gap: size(32);
-      
+      gap: size(24);
+
+      @include breakpoint(tablet991) {
+        align-items: center;
+        text-align: center;
+      }
+
       .text {
         color: $textcolor;
         font-size: size(18);
         font-weight: 400;
         line-height: 1.5;
       }
+    }
+  }
+
+  &-video {
+    @include radius(8);
+    @include flex-center;
+    overflow: hidden;
+    height: size(350);
+
+    @include breakpoint(tablet991) {
+      width: size(300);
+      height: size(168);
+      margin-inline: auto;
+    }
+
+    iframe {
+      @include wh100;
     }
   }
 }
