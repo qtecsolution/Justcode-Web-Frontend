@@ -486,3 +486,77 @@
     background: $primary;
   }
 }
+
+.home-sections {
+  position: relative;
+  margin: size(120) size(0);
+
+  @include breakpoint(tablet991) {
+    margin: size(80) size(0);
+  }
+  
+  .home-video-container {
+    padding-top: size(194);
+    padding-bottom: size(94);
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include radius(15);
+    z-index: 100;
+  
+    @include breakpoint(tablet991) {
+      padding-top: size(94);
+    }
+  
+    @media (max-width: 47.9375rem) {
+      background-size: contain;
+      border-radius: 0;
+    }
+  
+    .home-video-title {
+      color: $white;
+      font-size: size(24);
+      font-weight: 700;
+      line-height: 1.22;
+    }
+  
+    .home-video-hint {
+      color: $white;
+      font-size: size(16);
+      font-weight: normal;
+      line-height: 1.19;
+      pointer-events: none;
+    }
+  
+    .mt-50 {
+      margin-top: size(50);
+    }
+  
+    .mt-10 {
+      margin-top: size(10);
+    }
+  
+    .pt-10 {
+      padding-top: size(10);
+    }
+  }
+
+  .home-video-mask {
+    height: size(300);
+    background: $footermenubg;
+    @include border(solid, 1, $maskborder);
+    @include w100;
+    position: absolute;
+    top: 50%;
+    @include translate(0, -50%);
+  }
+}
+
+.coursesection {
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
+
+}

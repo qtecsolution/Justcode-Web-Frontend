@@ -70,3 +70,42 @@ button,
     background: $hoverbg;
   }
 }
+
+.home-video-play-button {
+  @include square(147);
+  background: $white;
+  box-shadow: $btnshadow;
+  @include circle;
+  cursor: pointer;
+  z-index: 22;
+
+  @include breakpoint(tablet991) {
+    @include square(75);
+  }
+
+  .feather-play {
+    @include square(36);
+    
+    @include breakpoint(tablet991) {
+      @include square(25);
+    }
+  }
+
+  &::before {
+    animation: pluse 2s ease-out infinite;
+    content: "";
+    position: absolute;
+    background: $white;
+    @include circle;
+    opacity: 0.4;
+    @include wh100;
+    z-index: -1;
+  }
+}
+
+@keyframes pluse {
+  100% {
+    @include scale(2.5);
+    opacity: 0;
+  }
+}
