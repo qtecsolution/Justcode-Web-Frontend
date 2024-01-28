@@ -2,7 +2,8 @@
 @use "../../partials" as *;
 
 .cardcourse {
-  background: $bgprimary;
+  background: $white;
+  box-shadow: $cardshade;
   @include radius(16);
   @include flex-center-column;
   gap: size(10);
@@ -11,9 +12,12 @@
   @include transitiontransform;
 
   &-icon {
+    background: $secondary;
+    @include radius(5);
     @include square(64);
     @include flex-center;
     overflow: hidden;
+    padding: size(16);
 
     img {
       object-fit: contain;
@@ -31,7 +35,7 @@
     }
 
     .coursetitle {
-      color: $white;
+      color: $black;
       font-size: size(16);
       font-weight: 600;
       line-height: 1.5;
@@ -46,6 +50,10 @@
 }
 
 .cardcoursemap {
+  background: $white;
+  box-shadow: $cardshadow;
+  @include border(solid, 1, $headerborder);
+  padding: size(20);
   @include wh100;
 
   .coursemaptext {
@@ -58,7 +66,8 @@
 }
 
 .cardsupportchannel {
-  background: $bgprimary;
+  background: $white;
+  box-shadow: $cardshade;
   @include radius(16);
   @include flex-center-column;
   gap: size(16);
@@ -68,12 +77,12 @@
   @include transitiontransform;
   
   .supporticon {
-    color: $white;
+    color: $black;
     font-size: size(64);
   }
 
   .title {
-    color: $white;
+    color: $secondary;
     font-size: size(24);
     font-weight: 500;
   }
