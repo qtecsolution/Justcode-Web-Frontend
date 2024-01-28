@@ -91,3 +91,77 @@
     @include translateY(size(-10));
   }
 }
+
+.cardreview {
+  background: $white;
+  @include border(solid, 1, $headerborder);
+  @include radius(8);
+  @include flex-column;
+  gap: size(10);
+  padding: size(20) size(24);
+
+  &-header {
+    @include flex-center-between;
+
+    .quoteicon {
+      color: $primary;
+      font-size: size(40);
+    }
+
+    .reviewbadge {
+      background: $secondary;
+      @include radius(48);
+      color: $white;
+      font-size: size(12);
+      font-weight: 600;
+      line-height: 1;
+      padding: size(6) size(12);
+    }
+  }
+
+  &-body {
+    @include flex-column;
+    gap: size(16);
+
+    .reviewtext {
+      color: $black;
+      font-size: size(14);
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .userdetail {
+      @include flex-center-vert;
+      gap: size(12);
+
+      .userthumb {
+        @include square(48);
+        @include circle;
+        @include flex-center;
+        overflow: hidden;
+
+        img {
+          @include wh100;
+        }
+      }
+
+      .info {
+        @include flex-column;
+
+        .name {
+          color: $black;
+          font-size: size(14);
+          font-weight: 500;
+          line-height: 1.5;
+        }
+
+        .designation {
+          color: $black;
+          font-size: size(13);
+          font-weight: 400;
+          line-height: 1.3;
+        }
+      }
+    }
+  }
+}

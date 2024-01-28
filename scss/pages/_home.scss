@@ -250,6 +250,12 @@
       left: 0;
     }
   }
+
+  .modulethumb {
+    @include breakpoint(tab992) {
+      max-width: 75%;
+    }
+  }
 }
 
 .courseroadmap {
@@ -276,18 +282,18 @@
 
   .instructorthumb {
     @include w100;
-    height: size(300);
+    max-height: size(340);
     @include flex-center;
     @include radius(10);
     overflow: hidden;
 
     @include breakpoint(desktop1400) {
-      height: size(360);
+      max-height: size(360);
     }
 
     img {
-      @include wh100;
-      object-fit: cover;
+      @include w100;
+      object-fit: contain;
     }
   }
 
@@ -331,7 +337,8 @@
 }
 
 .coursereview {
-  background: $showcasebg;
+  background: $gradientbg;
+  @include border-single(top, solid, 1.5, $headerborder);
   padding: size(48) size(8);
 
   &-content {
