@@ -433,3 +433,56 @@
     }
   }
 }
+
+.appdownload {
+  background: $showcasebg;
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
+
+  .appthumb {
+    max-width: size(300);
+    margin-inline: auto;
+  }
+
+  .downloadinfo {
+    @include flex-column;
+    gap: size(24);
+
+    .detail {
+      @include flex-column;
+      gap: size(48);
+    }
+  }
+}
+
+.downloadlink {
+  @include setBgColor($secondary, $white);
+  @include radius(32);
+  padding: size(8) size(16);
+  @include flex-center;
+  gap: size(8);
+  width: size(160);
+  height: size(42);
+  @include transitionsall;
+
+  .linkicon {
+    @include square(20);
+    @include flex-center;
+    overflow: hidden;
+  }
+
+  .linktext {
+    color: $white;
+    font-size: size(13);
+    font-weight: 600;
+    line-height: 1;
+  }
+
+  @include hover {
+    background: $primary;
+  }
+}

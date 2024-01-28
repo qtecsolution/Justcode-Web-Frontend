@@ -1618,6 +1618,63 @@ table tr td {
   line-height: 1.5;
 }
 
+.appdownload {
+  background: hsl(217, 44%, 96%);
+  padding: 3rem 0.5rem;
+}
+.appdownload-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.appdownload .appthumb {
+  max-width: 18.75rem;
+  margin-inline: auto;
+}
+.appdownload .downloadinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.appdownload .downloadinfo .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.downloadlink {
+  background: hsl(0, 0%, 30%);
+  color: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 10rem;
+  height: 2.625rem;
+  transition: all 350ms ease-in-out;
+}
+.downloadlink .linkicon {
+  width: 1.25rem;
+  height: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.downloadlink .linktext {
+  color: hsl(0, 0%, 100%);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1;
+}
+.downloadlink:not([disabled]):hover {
+  background: hsl(353, 100%, 48%);
+}
+
 .brandlogo {
   width: 9.375rem;
   height: 3.125rem;
