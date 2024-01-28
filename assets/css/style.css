@@ -604,6 +604,11 @@ button:focus,
   display: flex;
   align-items: center;
 }
+.header.sticky-top {
+  background: rgba(248, 250, 252, 0.6);
+  -webkit-backdrop-filter: blur(2.5rem);
+          backdrop-filter: blur(2.5rem);
+}
 
 input,
 select,
@@ -1442,6 +1447,18 @@ table tr td {
   padding: 3rem 0.5rem;
 }
 .supportchannel-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.coursereview {
+  background: hsl(217, 44%, 96%);
+  padding: 3rem 0.5rem;
+}
+.coursereview-content {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -6,4 +6,9 @@
   @include border-single(bottom, solid, 1.5, $headerborder);
   height: size(64);
   @include flex-center-vert;
+
+  &.sticky-top {
+    background: $stickybg;
+    backdrop-filter: blur(size(40));
+  }
 }

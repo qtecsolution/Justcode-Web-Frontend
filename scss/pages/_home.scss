@@ -328,5 +328,14 @@
     @include flex-center-column;
     gap: size(32);
   }
+}
 
+.coursereview {
+  background: $showcasebg;
+  padding: size(48) size(8);
+
+  &-content {
+    @include flex-center-column;
+    gap: size(32);
+  }
 }
