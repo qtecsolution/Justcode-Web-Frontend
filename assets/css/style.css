@@ -471,8 +471,8 @@ button:focus,
 }
 
 .btn-intro {
-  background: hsl(0, 0%, 100%);
-  border: solid 0.0625rem rgba(71, 85, 105, 0.1);
+  background: hsl(0, 0%, 30%);
+  border: solid 0.0625rem hsl(0, 0%, 30%);
   border-radius: 2rem;
   display: flex;
   align-items: center;
@@ -490,14 +490,18 @@ button:focus,
   justify-content: center;
   overflow: hidden;
 }
+.btn-intro .btnicon svg {
+  stroke: hsl(0, 0%, 100%);
+}
 .btn-intro .btntext {
-  color: hsl(215, 25%, 27%);
+  color: hsl(0, 0%, 100%);
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: 1;
 }
 .btn-intro:not([disabled]):hover {
-  background: rgb(248, 250, 252);
+  background: hsl(353, 100%, 48%);
+  border-color: hsl(353, 100%, 48%);
 }
 
 .home-video-play-button {
@@ -554,10 +558,10 @@ button:focus,
   gap: 0.625rem;
   padding: 1.25rem;
   height: 100%;
-  transition: transform 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 .cardcourse-icon {
-  background: hsl(0, 0%, 30%);
+  background: linear-gradient(135deg, #ff0844 0%, #ffb199 100%);
   border-radius: 0.3125rem;
   width: 4rem;
   height: 4rem;
@@ -580,7 +584,7 @@ button:focus,
 .cardcourse-detail .titlebox {
   display: flex;
   align-items: center;
-  height: 3rem;
+  min-height: 3rem;
   overflow: hidden;
 }
 .cardcourse-detail .coursetitle {
@@ -594,6 +598,10 @@ button:focus,
 }
 .cardcourse:not([disabled]):hover {
   transform: translateY(-0.625rem);
+  background: hsl(0, 0%, 30%);
+}
+.cardcourse:not([disabled]):hover .cardcourse-detail .titlebox .coursetitle {
+  color: hsl(0, 0%, 100%);
 }
 
 .cardcoursemap {
@@ -625,19 +633,24 @@ button:focus,
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 350ms ease-in-out;
+  transition: all 350ms ease-in-out;
 }
 .cardsupportchannel .supporticon {
-  color: hsl(0, 0%, 0%);
+  color: hsl(353, 100%, 48%);
   font-size: 4rem;
 }
 .cardsupportchannel .title {
-  color: hsl(0, 0%, 30%);
+  color: hsl(353, 100%, 48%);
   font-size: 1.5rem;
   font-weight: 500;
 }
 .cardsupportchannel:not([disabled]):hover {
+  background: hsl(0, 0%, 30%);
   transform: translateY(-0.625rem);
+}
+.cardsupportchannel:not([disabled]):hover .supporticon,
+.cardsupportchannel:not([disabled]):hover .title {
+  color: hsl(0, 0%, 100%);
 }
 
 .cardreview {
@@ -1049,7 +1062,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
   font-weight: 400;
 }
 .footer .footertop {
-  background: hsl(216, 53%, 26%);
+  background: #262626;
   padding: 4rem 0 0rem;
 }
 .footer .footertop .footertitle {
@@ -1058,7 +1071,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
   font-weight: 700;
 }
 .footer .footertop .footborder {
-  border-top: solid 0.0625rem hsl(216, 51%, 39%);
+  border-top: solid 0.0625rem hsl(0, 0%, 30%);
   margin-top: 2rem;
 }
 .footer .footerthumb {
@@ -1072,7 +1085,7 @@ input[type=search]::-webkit-search-results-decoration:focus {
 .footer .copyright {
   display: flex;
   align-items: center;
-  background: hsl(216, 53%, 22%);
+  background: #1a1a1a;
   padding: 0.75rem;
 }
 @media screen and (min-width: 62rem) {
@@ -1387,7 +1400,6 @@ table tr td {
 
 .showcase {
   padding: 1.5rem 0.5rem 3rem;
-  background: hsl(217, 44%, 96%);
 }
 .showcase .topicon {
   width: 3rem;
@@ -1808,7 +1820,6 @@ table tr td {
 }
 
 .appdownload {
-  background: hsl(217, 44%, 96%);
   padding: 3rem 0.5rem;
 }
 .appdownload-content {
@@ -1916,8 +1927,8 @@ table tr td {
 }
 .home-sections .home-video-mask {
   height: 18.75rem;
-  background: hsl(216, 53%, 26%);
-  border: solid 0.0625rem hsl(0, 0%, 44%);
+  background: #262626;
+  border: solid 0.0625rem hsl(0, 0%, 30%);
   width: 100%;
   position: absolute;
   top: 50%;

@@ -9,10 +9,10 @@
   gap: size(10);
   padding: size(20);
   @include h100;
-  @include transitiontransform;
+  @include transitionsall;
 
   &-icon {
-    background: $secondary;
+    background: $primarygradient;
     @include radius(5);
     @include square(64);
     @include flex-center;
@@ -30,7 +30,7 @@
 
     .titlebox {
       @include flex-center-vert;
-      height: size(48);
+      min-height: size(48);
       overflow: hidden;
     }
 
@@ -46,6 +46,15 @@
 
   @include hover {
     @include translateY(size(-10));
+    background: $secondary;
+
+    .cardcourse-detail {
+      .titlebox {
+        .coursetitle {
+          color: $white;
+        }
+      }
+    }
   }
 }
 
@@ -74,20 +83,27 @@
   padding: size(32);
   @include wh100;
   text-align: center;
-  @include transitiontransform;
+  @include transitionsall;
   
   .supporticon {
-    color: $black;
+    color: $primary;
     font-size: size(64);
   }
 
   .title {
-    color: $secondary;
+    color: $primary;
     font-size: size(24);
     font-weight: 500;
   }
 
   @include hover {
+    background: $secondary;
+
+    .supporticon,
+    .title {
+      color: $white;
+    }
+
     @include translateY(size(-10));
   }
 }

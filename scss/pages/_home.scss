@@ -11,7 +11,6 @@
 
 .showcase {
   padding: size(24) size(8) size(48);
-  background: $showcasebg;
 
   .topicon {
     @include square(48);
@@ -435,7 +434,6 @@
 }
 
 .appdownload {
-  background: $showcasebg;
   padding: size(48) size(8);
 
   &-content {
@@ -542,8 +540,8 @@
 
   .home-video-mask {
     height: size(300);
-    background: $footermenubg;
-    @include border(solid, 1, $maskborder);
+    background: darken($secondary, 15%);
+    @include border(solid, 1, $secondary);
     @include w100;
     position: absolute;
     top: 50%;

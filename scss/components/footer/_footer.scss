@@ -17,7 +17,7 @@
   }
 
   .footertop {
-    background: $footermenubg;
+    background: darken($secondary, 15%);
     padding: size(64) 0 size(0);
 
     .footertitle {
@@ -27,7 +27,7 @@
     }
 
     .footborder {
-      @include border-single(top, solid, 1, $footerborder);
+      @include border-single(top, solid, 1, $secondary);
       margin-top: size(32);
     }
   }
@@ -41,7 +41,7 @@
   
   .copyright {
     @include flex-center-vert;
-    background: $copyrightbg;
+    background: darken($secondary, 20%);
     padding: size(12);
     
     @include breakpoint(tab992) {

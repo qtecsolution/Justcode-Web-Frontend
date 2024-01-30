@@ -44,8 +44,8 @@ button,
 }
 
 .btn-intro {
-  background: $white;
-  @include border(solid, 1, $headerborder);
+  background: $secondary;
+  @include border(solid, 1, $secondary);
   @include radius(32);
   @include flex-center;
   gap: size(10);
@@ -57,17 +57,22 @@ button,
     @include square(20);
     @include flex-center;
     overflow: hidden;
+
+    svg {
+      stroke: $white;
+    }
   }
 
   .btntext {
-    color: $textcolor;
+    color: $white;
     font-size: size(13);
     font-weight: 600;
     line-height: 1;
   }
 
   @include hover {
-    background: $hoverbg;
+    background: $primary;
+    border-color: $primary;
   }
 }
 
