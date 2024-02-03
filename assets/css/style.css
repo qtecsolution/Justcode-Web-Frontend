@@ -1645,26 +1645,25 @@ table tr td {
 .appdownload {
   padding: 80px 0;
 }
-.appdownload-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 .appdownload .appthumb {
   max-width: 18.75rem;
   margin-inline: auto;
+  position: relative;
 }
-.appdownload .downloadinfo {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+
+.appdownload .appthumb-child {
+  transform: rotate(30deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  z-index: -1;
 }
-.appdownload .downloadinfo .detail {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+
+.appdownload .downloadinfo h3 {
+  font-size: 30px;
 }
 
 .downloadlink {
@@ -1688,12 +1687,14 @@ table tr td {
   justify-content: center;
   overflow: hidden;
 }
+
 .downloadlink .linktext {
   color: hsl(0, 0%, 100%);
   font-size: 0.8125rem;
   font-weight: 600;
   line-height: 1;
 }
+
 .downloadlink:not([disabled]):hover {
   background: #D24545;
 }
