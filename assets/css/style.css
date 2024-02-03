@@ -1620,63 +1620,9 @@ table tr td {
 .instructors {
   padding: 80px 0;
 }
-.instructors-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-.instructors-body {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-}
-.instructors .instructorthumb {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 0.625rem;
-  overflow: hidden;
-}
-@media screen and (min-width: 87.5rem) {
-  .instructors .instructorthumb {
-    max-height: 22.5rem;
-  }
-}
-.instructors .instructorthumb img {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.instructors .instructordetails {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-@media screen and (max-width: 47.9375rem) {
-  .instructors .instructordetails {
-    text-align: center;
-  }
-}
-.instructors .instructordetails .instructorname {
-  color: hsl(0, 0%, 0%);
-  font-weight: 600;
-}
-.instructors .instructordetails .details {
-  max-width: 25rem;
-}
-.instructors .instructordetails .details .instructortext {
-  color: hsl(215, 25%, 27%);
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.4;
-}
-@media screen and (min-width: 87.5rem) {
-  .instructors .instructordetails .details .instructortext {
-    font-size: 1.125rem;
-  }
+
+.instructors .instructors-header {
+  margin-bottom: 2rem;
 }
 
 .supportchannel {
@@ -2030,4 +1976,45 @@ table tr td {
   margin-bottom: 10px;
   margin-top: 40px;
   z-index: 1000;
+}
+
+.instructors .instructor-img::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #D24545;
+  border-radius: 6px;
+  top: -15px;
+  right: -15px;
+  z-index: -1;
+}
+
+.instructors .instructor-img::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #D24545;
+  border-radius: 6px;
+  bottom: -15px;
+  left: -15px;
+  z-index: -1;
+}
+
+.instructors .instructor-content {
+  padding-left: 30px;
+}
+
+.instructors .instructor-content .instructor-name {
+  font-size: 40px;
+}
+
+.instructors .instructor-content .instructor-bio {
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.instructors .instructor-content .instructor-text {
+  font-size: 18px;
 }
