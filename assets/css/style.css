@@ -1419,32 +1419,11 @@ table tr td {
 .aboutcourse {
   padding: 80px 0;
 }
-.aboutcourse-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
-.aboutcourse-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.aboutcourse-header .maintitle {
-  text-align: center;
-}
 
 .coursemodule {
   padding: 80px 0;
 }
-.coursemodule-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 2rem;
-}
+
 .coursemodule .verticaltimeline {
   max-height: 21.875rem;
   overflow-x: hidden;
