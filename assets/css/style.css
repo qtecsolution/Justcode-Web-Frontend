@@ -1883,11 +1883,6 @@ section .maintitle {
   z-index: 1000;
 }
 
-/* .instructors .instructor-img {
-  margin-bottom: 50px;
-  width: 300px;
-} */
-
 /* .instructors .instructor-img::before {
   content: "";
   position: absolute;
