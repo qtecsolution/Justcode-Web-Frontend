@@ -647,7 +647,7 @@ button:focus,
 .cardreview-body .reviewtext {
   color: hsl(0, 0%, 0%);
   font-weight: 400;
-  line-height: 1.5;
+  min-height: 150px;
 }
 .cardreview-body .userdetail {
   display: flex;
@@ -1470,6 +1470,7 @@ table tr td {
   font-weight: 600;
   line-height: 1;
   margin-bottom: 0.3125rem;
+  font-family: "Poppins", sans-serif !important;
 }
 .coursemodule .timeline-details .info {
   margin-bottom: 0.3125rem;
@@ -1491,20 +1492,21 @@ table tr td {
   flex-wrap: wrap;
 }
 .coursemodule .timeline-details .timelinebadge {
-  background: hsl(0, 0%, 100%);
-  color: #D24545;
+  color: #FFFFFF;
+  background-color: #D24545;
   border: solid 0.0625rem #D24545;
   border-radius: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 1.75rem;
-  font-weight: 700;
   line-height: 1;
   letter-spacing: 0.015625rem;
   padding-inline: 0.875rem;
   text-align: center;
+  font-family: "Poppins", sans-serif !important;
   cursor: pointer;
+  font-size: 13px;
 }
 .coursemodule .timeline-counter {
   background: #D24545;
@@ -1588,14 +1590,14 @@ table tr td {
 }
 .faqsection .faqdetail .accordion-button {
   border-radius: 0rem;
-  border-bottom: solid 0.0625rem rgba(71, 85, 105, 0.1);
+  border-bottom: solid 0.0625rem #ff0844;
   font-weight: 500;
   padding: 0.75rem 1rem;
   box-shadow: none;
   outline: none;
 }
 .faqsection .faqdetail .accordion-button:not(.collapsed) {
-  background: #000000;
+  background: #ff0844;
   color: hsl(0, 0%, 100%);
   box-shadow: none;
   outline: none;
@@ -1604,7 +1606,7 @@ table tr td {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 .faqsection .faqdetail .accordion-button:hover {
-  background: #000000;
+  background: #ff0844;
   color: hsl(0, 0%, 100%);
 }
 .faqsection .faqdetail .accordion-button:hover::after {
@@ -1881,12 +1883,12 @@ section .maintitle {
   z-index: 1000;
 }
 
-.instructors .instructor-img {
+/* .instructors .instructor-img {
   margin-bottom: 50px;
   width: 300px;
-}
+} */
 
-.instructors .instructor-img::before {
+/* .instructors .instructor-img::before {
   content: "";
   position: absolute;
   width: 100px;
@@ -1908,7 +1910,7 @@ section .maintitle {
   bottom: -15px;
   left: -15px;
   z-index: -1;
-}
+} */
 
 .instructors .instructor-content .instructor-name {
   font-size: 40px;
