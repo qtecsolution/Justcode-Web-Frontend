@@ -22,8 +22,8 @@ const reviewSlider = new Swiper('.reviewslider', {
       slidesPerView: 3,
     },
 
-    1200: {
-      slidesPerView: 4,
-    },
+    // 1200: {
+    //   slidesPerView: 4,
+    // },
   },
 });

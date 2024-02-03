@@ -629,6 +629,7 @@ button:focus,
 }
 .cardreview-header .quoteicon {
   color: #D24545;
+  font-size: 40px;
 }
 .cardreview-header .reviewbadge {
   background: #000000;
