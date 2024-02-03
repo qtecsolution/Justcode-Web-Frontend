@@ -1582,19 +1582,7 @@ table tr td {
 .faqsection {
   padding: 80px 0;
 }
-.faqsection .faqinfo {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-.faqsection .faqthumb {
-  max-width: 75%;
-}
-@media screen and (min-width: 62rem) {
-  .faqsection .faqthumb {
-    max-width: 50%;
-  }
-}
+
 .faqsection .faqdetail {
   max-height: 25rem;
   overflow-x: hidden;
@@ -1980,5 +1968,10 @@ section .maintitle {
 .supportchannel .supportchannel-item .supportchannel-title {
   font-size: 20px;
   font-weight: 500;
+  margin: 10px 0;
+}
+
+.faqsection .faqinfo h2 {
+  font-size: 40px;
   margin: 10px 0;
 }
