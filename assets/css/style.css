@@ -1158,6 +1158,7 @@ section .maintitle {
 
 .aboutcourse .course-item {
     border-bottom: 1px solid #e6e4e4;
+    min-height: 260px;
 }
 
 .aboutcourse .col-md-6:nth-child(6) .course-item {
@@ -1301,7 +1302,7 @@ section .maintitle {
 
 .footer {
     margin-top: 205px;
-    background-color: #1f3b64;
+    background-color: #000000;
     font-family: "Poppins", sans-serif;
 }
 

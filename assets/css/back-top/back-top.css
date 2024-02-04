@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: center;
   transform: scale(1);
+  border: #D24545;
 }
 
 .up-btn.up-btn__hide {
