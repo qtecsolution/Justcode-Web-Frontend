@@ -1057,7 +1057,7 @@ hr {
 }
 
 .home-sections .home-video-mask {
-    height: 18.75rem;
+    height: 13rem;
     background: #D24545;
     border: solid 0.0625rem #D24545;
     width: 100%;
@@ -1263,6 +1263,7 @@ section .maintitle {
 
 .instructors .instructor-content .instructor-text {
     font-size: 18px;
+    text-align: justify;
 }
 
 @media screen and (min-width: 993px) {
