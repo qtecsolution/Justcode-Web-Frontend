@@ -1137,6 +1137,10 @@ section .maintitle {
     margin-top: 40px;
 }
 
+.mr-15, .mx-15 {
+  margin-right: 15px !important;
+}
+
 .py-25 {
     padding: 25px 0;
 }
