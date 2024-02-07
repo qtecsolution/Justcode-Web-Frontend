@@ -303,6 +303,14 @@ hr {
 }
 
 @media screen and (max-width: 61.9375rem) {
+    .btn-intro {
+        padding: 10px 15px;
+    }
+
+    .maintitle {
+        font-size: 40px;
+    }
+
     .home-video-play-button .feather-play {
         width: 1.5625rem;
         height: 1.5625rem;
@@ -1119,6 +1127,12 @@ hr {
 /* Custom CSS by Muhaimin Shihab */
 section .maintitle {
     margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 61.9375rem) {
+    .maintitle {
+        font-size: 40px;
+    }
 }
 
 .p-10 {
